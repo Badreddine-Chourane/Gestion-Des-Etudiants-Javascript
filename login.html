@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Secure Login Page">
+  <meta name="author" content="Your Name">
+  <title>Login</title>
+  <link rel="stylesheet" href="login-style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <h1>Login</h1>
+      <form id="loginForm" aria-labelledby="loginTitle">
+        <input 
+          type="email" 
+          id="emailInput" 
+          placeholder="Enter your email" 
+          required 
+          aria-label="Email" 
+        />
+        <input 
+          type="password" 
+          id="passwordInput" 
+          placeholder="Enter your password" 
+          required 
+          aria-label="Password" 
+        />
+        <button type="submit">Login</button>
+      </form>
+      <div id="loginResult" aria-live="polite"></div>
+    </div>
+  </div>
+  <script src="login-script.js"></script>
+</body>
+</html>
